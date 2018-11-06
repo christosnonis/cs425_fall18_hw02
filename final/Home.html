@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+
+
+<style>
+
+#body { background-color: black;
+		max-width: 100%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+
+.row3, .row3 a{}
+
+#wrapper { width: 100%; }
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:50px 0;
+		}
+		
+#header {
+    background-image: url("img23.jpg");
+    background-repeat: no-repeat;
+	 background-size: 100% 100%;
+}
+
+#header #logo{margin-bottom:50px; text-align:center;}
+#header #logo *{margin:0; padding:0; line-height:1;}
+#header #logo h1{font-size:40px; letter-spacing:5px;   font-family: "Allerta Stencil", Sans-serif;}
+
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:150px 0 100px;}
+
+#pageintro {
+    background-image: url("img3.jpg");
+    background-repeat: no-repeat;
+	background-size: 100% 200%;
+	
+	margin-top: 70px;
+	margin-bottom: 70px;
+	
+}
+
+#pageintro article{text-align:center;}
+#pageintro article p{font-size:px;}
+#pageintro article .heading{font-size:32px;}
+#pageintro article footer{margin-top:150px;}
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+
+/* Content */
+
+
+
+.cta{}
+.cta article{padding-top:20px; text-align:center;}
+.cta article *{margin:0; padding:0;}
+.cta article span{display:block; position:relative; width:100px; height:100px; margin:0 auto 60px; line-height:100px; font-size:40px; ; z-index:1;}
+.cta article span::before, .cta article span::after{position:absolute; top:0; right:0; bottom:0; left:0; content:""; border:1px solid; transform:rotate(-90deg); z-index:-1;}
+.cta article span::after{transform:rotate(45deg);}
+.cta article:hover span::after{transform:rotate(360deg); transition:transform .5s ease-in-out;}
+.cta article .heading{margin-bottom:10px;}
+.cta article footer{margin-top:30px;}
+
+
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0; border-bottom:1px solid; text-align:center;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:30px 0;}
+#copyright *{margin:0; padding:0; margin-left:6px;}
+#copyright p:first-of-type{margin-bottom:10px;}
+#copyright p:last-of-type{font-size:.8rem;}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+
+/* Top Navigation */
+
+#mainav{}
+#mainav ul{text-transform:uppercase; text-align:center;}
+#mainav ul ul{z-index:9999; position:absolute; width:100px; text-transform:none; text-align:left;}
+#mainav ul ul ul{left:100px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:20px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+
+.faico a{color:#FFFFFF; background-color:#A3C9D3;}
+
+
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#FFFFFF; background-color:#000000;}
+a{color:#A3C9D3;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#A3C9D3;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#A3C9D3; border-color:#A3C9D3;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Rows */
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2, .row2 a{color:#888888; background-color:#F5F5F5;}
+.row3{color:#888888; background-color:#FFFFFF;}
+.row4, .row4 a{}
+.row5, .row5 a{}
+
+
+/* Header */
+#header #logo a{color:inherit;}
+
+
+/* Content Area */
+
+
+.cta article .heading a{color:inherit;}
+.cta article:hover .heading a{color:#A3C9D3;}
+.cta article span{color:#FFFFFF;}
+.cta article span::before, .cta article span::after{background-color:#A3C9D3; border-color:#A3C9D3;}
+.cta article:hover span::after{border-color:inherit;}
+
+
+/* Footer */
+#footer{border-color:rgba(255,255,255,.2);}
+
+
+/* Copyright */
+#copyright a{color:inherit;}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:650px){
+	.hoc{max-width:100%;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:100%;}
+
+	
+	#mainav form{display:block;}
+
+	
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+
+
+	#copyright{}
+}
+
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+<!----------------------Menus--------------->
+<div class="bgded overlay" > 
+  <!-- ################################################################################################ -->
+  <div class="wrapper">
+    <header id="header" class="hoc clear">
+      <div id="logo"> 
+		
+        <!-- ################################################################################################ -->
+        <h1><a href="Home.html">JD Photography</a></h1>
+        
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="clear"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li><a class="active" href="Home.html">Home</a></li>
+          <li><a class="active" href="Contact.html">Contact</a></li>
+          <li><a class="active" href="About.html">About</a></li>
+          
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+	
+	
+	
+	<div id="pageintro" class="hoc clear">
+    <article><em></em>
+      <h2 class="heading">Our vision is to be the customer's first choice in the industry of professional photograph and filming service as well as professional photograph printing. </h2>
+           
+    </article>
+  </div>
+	
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+<!-- Photo Grid -->
+
+<div class="row"> 
+  <div class="column">
+    <img src="img4.jpg" style="width:100%">
+    <img src="img5.jpg" style="width:100%">
+   
+  </div>
+  <div class="column">
+    <img src="img6.jpg" style="width:100%">
+    <img src="img7.jpg" style="width:100%">
+    <img src="img8.jpg" style="width:100%">
+    
+  </div>  
+  <div class="column">
+    <img src="img9.jpg" style="width:100%">
+    <img src="img10.jpg" style="width:100%">
+    <img src="img11.jpg" style="width:100%">
+   
+  </div>
+  <div class="column">
+    <img src="img12.jpg" style="width:100%">
+    <img src="img13.jpg" style="width:100%">
+    <img src="img14.jpg" style="width:100%">
+    
+  </div>
+</div>
+
+<!-------------------TESTIMONIALS ----------------------->
+
+ <div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-80">
+      <h3 class="heading"></h3>
+      
+    </div>
+    <ul class="nospace group cta" style="list-style-type: none;">
+      <li class="one_third">
+        <article><span>N</span>
+          <h6 class="heading font-x1"><a href="#">Nature's Products</a></h6>
+          <p>Great service! We are extremely happy about this collaboration.</p>
+          
+        </article>
+      </li>
+      <li class="one_third">
+        <article><span>A</span>
+          <h6 class="heading font-x1"><a href="#">Ambra</a></h6>
+          <p>So happy about this collaboration. Definitely will work again.</p>
+          
+        </article>
+      </li>
+      <li class="one_third">
+        <article><span>C</span>
+          <h6 class="heading font-x1"><a href="#">Cycling Group</a></h6>
+          <p>Very pleasant character and nice comunication.</p>
+          
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </section>
+</div>
+
+
+<!-- Footer -->
+<div class="bgded overlay" style="background-image:url('img19.jpg');">
+  <footer id="footer" class="hoc clear center"> 
+    <!-- ################################################################################################ -->
+    <h3 class="heading uppercase">FIND US</h3>
+    <ul class="faico clear">
+      <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+     
+      <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+	  <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+
+      
+    </ul>
+    <!-- ################################################################################################ -->
+  </footer>
+  <!-- ################################################################################################ -->
+  <div id="copyright" class="hoc clear center"> 
+    <!-- ################################################################################################ -->
+    <p>We do not own any of the rights. This is just a homework.</p>
+    
+    <!-- ################################################################################################ -->
+	
+	<!--------------------- BACK TO TOP  ----------------------------->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>
